@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0,user-scalable=0">
+  <title>چک لیست</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="angular.js"></script>
+  <script src="script.js"></script>
+</head>
+<body ng-app="myApp">
+  <div ng-controller="myCtrl">
+    <ul>
+      <li class="header"><h3>چک لیست</h3></li>
+      <li ng-repeat="x in list">
+        {{x.text}}<input type="checkbox" ng-model="x.tick" id="z"></input>
+      </li>
+      <li>
+        <form class="footer">
+          <input type="text" name="" value="" placeholder="نام کار" ng-model="itemname">
+          <button type="reset" ng-click="add()">اضافه کردن</button>
+          <button  ng-click="delete()">پاک کردن</button>
+        </form>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

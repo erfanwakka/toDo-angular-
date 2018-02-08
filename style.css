@@ -1,0 +1,85 @@
+body{
+	text-align: center;
+	font-family: 'BMitra';
+	font-size: 25px;
+}
+@font-face {
+    font-family: 'BMitra';
+    src: url('fonts/BMitra.eot');
+    src: url('fonts/BMitra.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BMitra.woff') format('woff'),
+         url('fonts/BMitra.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+}
+ul{
+	width: 400px;
+	margin: 0px auto;
+	background-color: #e6e6e6;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	list-style-type: none;
+	height: 70vh;
+}
+li{
+	text-align: right;
+	border-bottom: 1px solid #666666;
+	padding: 20px;
+	margin-right: -40px;
+}
+li:last-child{border-bottom: 0px solid #666666;}
+li:hover:last-child{
+	border-bottom: 0px solid #666666;
+	background-color: #e6e6e6;
+}
+li:hover{
+	background-color: #ffffff;
+}
+#z{
+	float: left;
+	cursor: pointer;
+}
+.header{
+	text-align: center;
+	padding: 10px;
+	border: 0px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	background-color: #00cc00;
+}
+.header:hover{
+	background-color: #00cc00;
+}
+.footer{
+	height: 100px;
+}
+.footer button{
+	border-radius: 8px;
+	border: 1px solid  #666666;
+	width: 80px;
+	height: 38px;
+	color: #000;
+	font-size: 15px;
+	padding: 5px;
+	float: left;
+	background-color: #00cc00;
+	margin-right: 5px;
+}
+.footer button:hover{
+	background-color: #008000;
+	color: #000;
+}
+.footer input{
+	border-radius: 8px;
+	border: 1px solid  #666666;
+	width: 210px;
+	height: 25px;
+	color: #000;
+	font-size: 15px;
+	padding: 5px;
+}
+.footer input:hover,input:focus{
+	background-color: #f2f2f2;
+}
+.error{
+}
